@@ -1,0 +1,78 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #333;
+  background-color: #f9fafb;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* For sermon content */
+.sermonSection p {
+  font-size: 1.05rem;
+}
+
+@media print {
+  .form, 
+  .formContainer, 
+  .button, 
+  .actionButtons, 
+  .tabContainer, 
+  .features, 
+  .hero, 
+  .aboutSection, 
+  .footer {
+    display: none;
+  }
+  
+  body {
+    background-color: white;
+    font-size: 12pt;
+  }
+  
+  .sermonResult {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  
+  h2 {
+    font-size: 14pt;
+  }
+  
+  h3 {
+    font-size: 12pt;
+  }
+  
+  p, li {
+    page-break-inside: avoid;
+  }
+}

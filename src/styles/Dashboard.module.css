@@ -1,0 +1,149 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1a202c;
+  }
+  
+  .loadingContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading {
+    padding: 1rem;
+    text-align: center;
+    color: #718096;
+  }
+  
+  .emptyState {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emptyState p {
+    margin-bottom: 1.5rem;
+    color: #718096;
+    font-size: 1.1rem;
+  }
+  
+  .createButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+  }
+  
+  .createButton:hover {
+    background-color: #2563eb;
+  }
+  
+  .sermonList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .sermonCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .sermonCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sermonInfo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .sermonTitle {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    color: #1a202c;
+  }
+  
+  .sermonScripture {
+    margin: 0 0 0.5rem 0;
+    color: #4a5568;
+    font-style: italic;
+  }
+  
+  .sermonDate {
+    margin: 0;
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  .sermonActions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .viewButton, .deleteButton {
+    flex: 1;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .viewButton {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .viewButton:hover {
+    background-color: #2563eb;
+  }
+  
+  .deleteButton {
+    background-color: #f3f4f6;
+    color: #ef4444;
+  }
+  
+  .deleteButton:hover {
+    background-color: #fee2e2;
+  }
+  
+  @media (max-width: 640px) {
+    .sermonList {
+      grid-template-columns: 1fr;
+    }
+    
+    .title {
+      font-size: 1.75rem;
+    }
+  }

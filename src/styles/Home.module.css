@@ -1,0 +1,588 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f3f4f6;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  color: #4a5568;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.featureItem {
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.featureItem h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+}
+
+.featureItem p {
+  margin: 0;
+  color: #718096;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  color: #718096;
+}
+
+/* Form Styles */
+.formContainer {
+  width: 100%;
+  padding: 2rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputTypeToggle {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.toggleButton {
+  flex: 1;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.activeToggle {
+  background: #3b82f6;
+  color: white;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.button:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.suggestionContainer {
+  margin: 1.5rem 0;
+}
+
+.suggestionLabel {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.suggestionTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.suggestionTag {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.suggestionTag:hover {
+  background: #e5e7eb;
+}
+
+/* Sermon Result Styles */
+.sermonResultContainer {
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.tabContainer {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f9fafb;
+}
+
+.tabButton {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.tabButton:hover {
+  color: #3b82f6;
+}
+
+.activeTab {
+  color: #3b82f6;
+  border-bottom: 3px solid #3b82f6;
+}
+
+.sermonResult {
+  padding: 2rem;
+}
+
+.sermonTitle {
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+  text-align: center;
+}
+
+.sermonScripture {
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sermonSection {
+  margin-bottom: 2rem;
+}
+
+.sermonSection h3 {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.point {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #e2e8f0;
+}
+
+.point h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.supportingScripture {
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+/* Outline Styles */
+.outlineContainer {
+  padding: 1rem;
+}
+
+.outlineItem {
+  margin-bottom: 1.5rem;
+}
+
+.outlineItem h3 {
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.outlineSubItem {
+  margin-left: 2rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.outlineSubItem::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+/* Preaching Notes Styles */
+.preachingNotes {
+  background-color: #fffdf7;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #f59e0b;
+}
+
+.noteItem {
+  margin-bottom: 1.5rem;
+}
+
+.noteItem h3 {
+  color: #b45309;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #f59e0b;
+}
+
+.noteItem ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.noteItem li {
+  margin-bottom: 0.5rem;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.actionButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.actionButton:hover {
+  background-color: #e5e7eb;
+}
+
+/* Error Message */
+.errorContainer {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fee2e2;
+  border-left: 4px solid #ef4444;
+  color: #b91c1c;
+  border-radius: 6px;
+}
+
+.errorMessage {
+  margin: 0;
+}
+
+/* About Section */
+.aboutSection {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem 0 4rem;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+}
+
+.aboutTitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.aboutContent p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.aboutContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    padding: 3rem 1rem;
+  }
+  
+  .features {
+    flex-direction: column;
+  }
+  
+  .featureItem {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .formContainer, .sermonResult {
+    padding: 1.5rem;
+  }
+  
+  .tabButton {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+  
+  .actionButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .tabContainer {
+    flex-direction: column;
+  }
+  
+  .tabButton {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .activeTab {
+    border-bottom: 3px solid #3b82f6;
+  }
+}
+
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #3b82f6;
+}
+
+.authContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.authButton {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.authButton:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    gap: 1rem;
+  }
+  
+  .username {
+    display: none;
+  }
+}
+
+.loginPrompt {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.loginButton {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+  background-color: #2563eb;
+}

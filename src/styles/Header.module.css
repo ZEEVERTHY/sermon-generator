@@ -1,0 +1,75 @@
+.header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3b82f6;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .navLink {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .navLink:hover {
+    color: #3b82f6;
+  }
+  
+  .authContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .username {
+    font-size: 0.9rem;
+    color: #718096;
+  }
+  
+  .authButton {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .authButton:hover {
+    background-color: #2563eb;
+  }
+  
+  @media (max-width: 640px) {
+    .nav {
+      gap: 1rem;
+    }
+    
+    .username {
+      display: none;
+    }
+  }
