@@ -1,3 +1,30 @@
+# AI-Powered Sermon Generator
+
+An intelligent content generation platform that uses LLM APIs to create personalized sermons based on user-defined themes, scripture references, and contextual parameters.
+
+## 🎯 Project Purpose
+Built to explore prompt engineering, knowledge structuring, and iterative AI training—the same skills used in AI agent coaching for customer support operations.
+
+## 🧠 Key Learnings
+- **Prompt Design:** Crafted and refined prompts to guide LLM behavior and improve output relevance
+- **Context Management:** Structured knowledge inputs to help the model understand user intent
+- **Failure Analysis:** Identified edge cases where the model struggled and adjusted prompts accordingly
+- **Iterative Improvement:** Implemented feedback loops to continuously improve generation quality
+
+## 🛠️ Tech Stack
+- Next.js / TypeScript
+- LLM API Integration (OpenAI/Anthropic)
+- Prisma ORM
+- Prompt Engineering & Training
+
+## 💡 Relevance to AI Support Operations
+This project demonstrates the core skills required for AI agent coaching:
+1. Analyzing AI responses for accuracy and relevance
+2. Tuning prompts and parameters to improve performance
+3. Structuring knowledge to guide model behavior
+4. Identifying failure patterns and implementing fixes
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
